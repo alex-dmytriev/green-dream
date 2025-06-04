@@ -1,26 +1,3 @@
-@media screen {
-  .container {
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
-/* finish basic styles */
 /* !MOBILE */
 @media screen {
   .support {
@@ -28,17 +5,14 @@
     padding-bottom: 32px;
   }
 
-  .support_title {
-    font-family: ___________;
-    font-weight: 700;
+  .support-title {
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     color: #030a06;
     margin-bottom: 24px;
   }
-  .support_subtitle {
-    font-family: ____________;
+  .support-subtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
@@ -46,26 +20,24 @@
     margin-bottom: 32px;
   }
 
-  .support_form_list {
+  .support-form-list {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
     margin-bottom: 24px;
   }
 
-  .support_form_label {
+  .support-form-label {
     position: relative;
     display: block;
-    font-family: __________;
-    font-weight: 400;
-    font-size: 16px;
+
     line-height: 1.6;
     color: #030a06;
   }
 
   /* ?SUPPORT input */
 
-  .support_form_input {
+  .support-form-input {
     display: block;
     width: 100%;
     height: 42px;
@@ -73,153 +45,189 @@
     background-color: rgba(3, 10, 6, 0.05);
     border: 1px solid rgba(3, 10, 6, 0.15);
     border-radius: 6px;
-    font-family: ___________;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.6;
     color: #030a06;
+    transition: border 250ms linear, color 250ms linear;
   }
 
-  .support_form_input:focus {
+  .support-form-input:focus {
     outline: transparent;
   }
 
-  .support_form_input::placeholder {
-    font-family: ____________;
-    font-weight: 400;
-    font-size: 16px;
+  .support-form-input::placeholder {
     line-height: 1.6;
     color: rgba(3, 10, 6, 0.6);
   }
 
-  .support_form_input:focus::placeholder {
+  .support-form-input:focus::placeholder {
     opacity: 0;
   }
 
-  .support_form_input:not(:placeholder-shown):invalid {
+  .support-form-input:not(:placeholder-shown):invalid {
     border: 1px solid #d64040;
     color: #d64040;
   }
 
-  .support_form_input:not(:placeholder-shown):invalid
-    + .form_input_invalid_text {
+  .support-form-input:not(:placeholder-shown):invalid
+    + .form-input-invalid-text {
     opacity: 1;
   }
 
   /* ?SUPPORT textarea */
 
-  .support_form_area {
+  .support-form-area {
     width: 100%;
     height: 180px;
     padding: 12px;
+    resize: none;
     background-color: rgba(3, 10, 6, 0.05);
     border: 1px solid rgba(3, 10, 6, 0.15);
     border-radius: 6px;
+    transition: border 250ms linear, color 250ms linear;
   }
 
-  .support_form_area::placeholder {
-    font-family: ____________;
+  .support-form-area::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: rgba(3, 10, 6, 0.6);
   }
 
-  .support_form_area:focus {
+  .support-form-area:focus {
     outline: transparent;
   }
 
-  .support_form_area:focus::placeholder {
+  .support-form-area:focus::placeholder {
     opacity: 0;
   }
 
-  .support_form_area:not(:placeholder-shown):invalid {
+  .support-form-area:not(:placeholder-shown):invalid {
     border: 1px solid #d64040;
     color: #d64040;
   }
 
-  .support_form_area:not(:placeholder-shown):invalid + .form_area_invalid_text {
+  .support-form-area:not(:placeholder-shown):invalid + .form-area-invalid-text {
     opacity: 1;
   }
 
   /* ?INVALID text */
-  .form_input_invalid_text {
-    display: block;
+  .form-input-invalid-text {
+    /* display: block; */
     position: absolute;
     opacity: 0;
     left: 3px;
     bottom: -20px;
     font-size: 14px;
     color: #d64040;
+    transition: opacity 250ms linear;
   }
 
-  .form_area_invalid_text {
+  .form-area-invalid-text {
     display: block;
     position: absolute;
     opacity: 0;
     left: 3px;
     bottom: -14px;
-    font-family: ___________;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
+    line-height: 1.6;
     color: #d64040;
+    transition: opacity 250ms linear;
   }
 
   /* ?SUPPORT btn */
-  .support_btn {
+  .support-btn {
     width: 100%;
     height: 50px;
     padding: 12px 24px;
     background: #030a06;
-    border: 1px solid var(--color-neutral-darkest);
     border-radius: 6px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.6;
     color: #fff;
     margin-bottom: 24px;
+    transition: background 250ms linear, border 250ms linear;
   }
 
-  /* ?SUPPORT images */
-  .support_wrapper_images {
-    background-color: #030a06;
+  .support-btn:hover,
+  .support-btn:focus {
+    background: transparent;
+    border: 1px solid #030a06;
+    color: #030a06;
+    outline: transparent;
+  }
+
+  .support-btn:active {
+    background: transparent;
+    border: transparent;
+  }
+
+  .support-wrapper-images {
+    background-image: url(../img/support/support-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 40px;
     width: auto;
     height: 428px;
   }
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .support-wrapper-images {
+    background-image: url(../img/support/support-mobile@2x.png);
+  }
+}
+
 /* !TABLET */
 @media screen and (min-width: 768px) {
   /* ?SUPPORT btn */
-  .support_btn {
+  .support {
+    padding-top: 64;
+    padding-bottom: 64px;
+  }
+
+  .support-btn {
     display: inline-block;
     width: 249px;
+  }
+
+  .support-wrapper-images {
+    background-image: url(../img/support/support-tablet.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .support-wrapper-images {
+    background-image: url(../img/support/support-tablet@2x.png);
   }
 }
 
 /* !DESKTOP */
 @media screen and (min-width: 1440px) {
   /* ?RANKING container */
-  .container {
+  .fex-container {
     display: flex;
     column-gap: 24px;
+  }
+
+  .support-title {
+    font-size: 48px;
   }
 
   .container div {
     width: calc((100% - 24px) / 2);
   }
 
-  .support_btn {
+  .support-btn {
     width: 198px;
   }
 
-  .support_wrapper_images {
-    background-color: #030a06;
-    border-radius: 40px;
-    /* width: 644px; */
+  .support-wrapper-images {
+    background-image: url(../img/support/support-desk.png);
     height: 767px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+  .support-wrapper-images {
+    background-image: url(../img/support/support-desk@2x.png);
   }
 }
