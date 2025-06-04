@@ -1,0 +1,64 @@
+<section class="support">
+    <div class="container">
+      <div class="support_wrapper_form">
+        <h2 class="support_title">Залишились питання? Зв'яжіться з нами!</h2>
+        <h3 class="support_subtitle">Ми тут, щоб допомогти!</h3>
+        <form action="" class="support_form">
+          <ul class="support_form_list">
+            <li class="support_form_item">
+              <label class="support_form_label" for="name"
+                >Ім'я
+                <input
+                  class="support_form_input"
+                  id="name"
+                  name="user_name"
+                  type="text"
+                  placeholder="Іван"
+                  min="5"
+                  max="64"
+                  minlength="5"
+                  maxlength="64"
+                  required
+                />
+                <p class="form_input_invalid_text">Error text</p>
+              </label>
+            </li>
+            <li class="support_form_item">
+              <label class="support_form_label" for="mail"
+                >Електронна пошта
+                <input
+                  class="support_form_input"
+                  id="mail"
+                  name="user_email"
+                  type="email"
+                  placeholder="hello@ecotote.com"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  required
+                />
+                <p class="form_input_invalid_text">Error text</p>
+              </label>
+            </li>
+            <li class="support_form_item">
+              <label class="support_form_label" for="message"
+                >Повідомлення
+                <textarea
+                  class="support_form_area"
+                  name="user_message"
+                  id="message"
+                  placeholder="Введіть своє повідомлення..."
+                  max="500"
+                  min="10"
+                  minlength="5"
+                  required
+                ></textarea>
+                <p class="form_area_invalid_text">Error text</p>
+              </label>
+            </li>
+          </ul>
+          <button class="support_btn">Надіслати</button>
+        </form>
+      </div>
+      <div class="support_wrapper_images"></div>
+    </div>
+  </section>
+  
