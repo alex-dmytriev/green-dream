@@ -1,0 +1,60 @@
+<section class="support" id="support-section">
+  <div class="container support-container">
+    <div class="support-wrapper-form">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
+      <form action="" class="support-form">
+        <ul class="support-form-list">
+          <li class="support-form-item">
+            <label class="support-form-label" for="name"
+              >Ім'я
+              <input
+                class="support-form-input"
+                id="name"
+                name="user_name"
+                type="text"
+                placeholder="Іван"
+                minlength="5"
+                maxlength="64"
+                required
+              />
+              <p class="form-input-invalid-text">Error text</p>
+            </label>
+          </li>
+          <li class="support-form-item">
+            <label class="support-form-label" for="mail"
+              >Електронна пошта
+              <input
+                class="support-form-input"
+                id="mail"
+                name="user_email"
+                type="email"
+                placeholder="hello@ecotote.com"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                required
+              />
+              <p class="form-input-invalid-text">Error text</p>
+            </label>
+          </li>
+          <li class="support-form-item">
+            <label class="support-form-label" for="message"
+              >Повідомлення
+              <textarea
+                class="support-form-area"
+                name="user_message"
+                id="message"
+                placeholder="Введіть своє повідомлення..."
+                minlength="10"
+                maxlength="500"
+                required
+              ></textarea>
+              <p class="form-area-invalid-text">Error text</p>
+            </label>
+          </li>
+        </ul>
+        <button class="support-btn">Надіслати</button>
+      </form>
+    </div>
+    <div class="support-wrapper-images"></div>
+  </div>
+</section>
