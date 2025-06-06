@@ -35,11 +35,11 @@
       color var(--transition-base), background var(--transition-base),
       opacity var(--transition-base);
   }
-  .hero-buy-button:hover,
-  .hero-buy-button:focus {
+  .hero-buy-button:active {
     opacity: 0.5;
   }
-  .hero-buy-button:active {
+  .hero-buy-button:hover,
+  .hero-buy-button:focus {
     border-color: var(--color-emerald-darkest);
     background: var(--color-emerald-darkest);
     color: var(--color-white);
