@@ -29,6 +29,15 @@
 .f-menu-item {
     font: var(--text-regular-normal);
     color: var(--color-neutral-darkest);
+    transition: color var(--transition-base);
+}
+.f-menu-item:hover,
+.f-menu-item:focus {
+    color: var(--color-emerald-darkest);
+    opacity: 0.6;
+}
+.f-menu-item:active {
+    color: #11391699;
 }
 
 .f-social-links {
@@ -72,6 +81,15 @@
 .f-address-link {
     font: var(--text-regular-normal);
     color: var(--color-neutral-darkest) ;
+    transition: color var(--transition-base);
+}
+.f-address-link:hover,
+.f-address-link:focus {
+    color: var(--color-emerald-darkest);
+    opacity: 0.6;
+}
+.f-address-link:active {
+    color: #11391699;
 }
 
 .f-copyright {
