@@ -1,4 +1,4 @@
-/* =======================ABUT SECTION===================== */
+/* ABUT SECTION */
 .about-section {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -53,15 +53,16 @@
     padding-bottom: 80px;
   }
   .about-section-subtitle {
-    font: var(--heading-desktop-h1);
-    margin-bottom: 16px;
+    font: var(--heading-mobile-h2);
+    margin-bottom: 24px;
     max-width: 629px;
     margin: 0 auto;
   }
   .about-section-title {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   .about-section-text {
+    font: var(--text-medium-normal);
     max-width: 573px;
     margin: 0 auto;
   }
@@ -79,7 +80,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(/img/webp/about/feature-pc.webp);
     padding-top: 112px;
-    padding-bottom: 112px;
+    padding-bottom: 94px;
   }
   @media screen and (min-resolution: 192dpi) {
     .about-section {
@@ -87,5 +88,9 @@
         url(/img/webp/about/feature-pc@2x.webp);
     }
   }
+  .about-section-subtitle {
+    font: var(--heading-desktop-h1);
+    margin-bottom: 24px;
+  }
 }
-/* =======================ABUT SECTION END===================== */
+/* ABUT SECTION END */
