@@ -3,7 +3,7 @@
     <div class="support-wrapper-form">
       <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
       <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
-      <form action="" class="support-form">
+      <form class="support-form">
         <ul class="support-form-list">
           <li class="support-form-item">
             <label class="support-form-label" for="name"
@@ -18,7 +18,7 @@
                 maxlength="64"
                 required
               />
-              <p class="form-input-invalid-text">Error text</p>
+              <span class="form-input-invalid-text">Error text</span>
             </label>
           </li>
           <li class="support-form-item">
@@ -33,7 +33,7 @@
                 pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                 required
               />
-              <p class="form-input-invalid-text">Error text</p>
+              <span class="form-input-invalid-text">Error text</span>
             </label>
           </li>
           <li class="support-form-item">
@@ -48,11 +48,11 @@
                 maxlength="500"
                 required
               ></textarea>
-              <p class="form-area-invalid-text">Error text</p>
+              <span class="form-area-invalid-text">Error text</span>
             </label>
           </li>
         </ul>
-        <button class="support-btn">Надіслати</button>
+        <button class="support-btn" type="submit">Надіслати</button>
       </form>
     </div>
     <div class="support-wrapper-images"></div>
